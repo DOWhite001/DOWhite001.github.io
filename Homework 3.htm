@@ -3,18 +3,114 @@
     <head>
         <meta charset="utf-8">
         <title>Homework For Assignment 3</title>
-        <link rel="stylesheet" href="HTML_tags_demo.css">
+        <link rel="stylesheet" href="Homework%203.css">
     </head>
     <body>
         <h1>Different types of Sharks</h1>
         <h2>GET form</h2>
-        <form action="Homework%203.htm" method="get">
-            <label for="shark">Choose a shark:</label>
-            <select name="shark" id="shark">
+
+
+<form><form action="Homework%203.htm" method="get">
+            <label for="name_get">What is your name:</label><br>
+            <input type="text" name="name_get" id="name_get"><br>
+            <label for="shark">Whats your favorite Shark?:</label>
+            <select id="shark_get" name="shark_get">
                 <option value="great_white">Great White Shark</option>
                 <option value="hammerhead">Hammerhead Shark</option>
                 <option value="tiger">Tiger Shark</option>
                 <option value="bull">Bull Shark</option>
-            </select>
-            <input type="submit" value="Submit">
+                <option value="Not really a big fish person">I don't like Sharks</option>
+                <option value="whale">Whale Shark</option>
+            </select><br><br>
+
+
+            <label for="get-dob">Date of birth:</label>
+            <input type="date" id="get-dob" name="DOB" value="2006-08-29"><br>
+            <label for="get-pswd">Password</label>
+            <input type="password" id="get-pswd" name="password"><br>
+            
+            <input type="hidden" name="" value="Not really a big fish person">
+        
+            <label for="Get_species">How many Different species do think are in the Ocean? (s)</label>
+            <input type="number" name="Species" id="get-species" min="1" max="1000" step="10"><br>
+
+
+            <label>How interested are you in sharks?</label><br>
+                <input type="radio" name="interest_level" value="a_little">A little
+                <input type="radio" name="interest_level" value="medium">Medium
+                <input type="radio" name="interest_level" value="a_lot">A lot<br><br>
+
+
+
+             <p>What type of Shark are you interested in(check all that apply):<br>
+                <input type="checkbox" id="get_large" name="get_large" value="large">Large Sharks<br>
+                <input type="checkbox" id="get_small" name="get_small" value="small">Small Sharks<br>
+                <input type="checkbox" id="get_UNIQUE" name="get_UNIQUE" value="unique">Sharks with unique features<br>
+                <input type="checkbox" id="get_dangerous" name="get_dangerous" value="dangerous">Dangerous Sharks<br>
+                <input type="checkbox" id="get_rare" name="get_rare" value="rare">Rare Sharks<br>
+                
+            </p>
+
+
+             <label for="get-comments">General comments:</label><br>
+            <textarea name="comments" id="get-comments"></textarea><br>
+
+
+
+
+                
+                
+    <input type="submit"><input type="reset">
+</form>
+        <h2>POST form</h2>
+        <form action="Homework%203.htm" method="post"><br>
+            <label for="name_get">What is your name:</label><br>
+            <input type="text" name="name_get" id="name_get"><br>
+            <label for="shark_post">Whats your favorite Shark?:</label>
+            <select name="shark_post" id="shark_post">
+                <option value="great_white">Great White Shark</option>
+                <option value="hammerhead">Hammerhead Shark</option>
+                <option value="tiger">Tiger Shark</option>
+                <option value="bull">Bull Shark</option>
+                <option value="Not really a big fish person">I don't like Sharks</option>
+                <option value="whale">Whale Shark</option>
+            </select><br><br>
+            
+            <input type="hidden" name="" value="Not really a big fish person">
+            
+            <label for="POST_species">How many Different species do think are in the Ocean? (s)</label>
+            <input type="number" name="Species" id="POST-species" min="1" max="1000" step="10"><br>
+
+
+            <label for="POST-dob">Date of birth:</label>
+            <input type="date" id="POST-dob" name="DOB" value="2006-08-29"><br>
+            <label for="POST-pswd">Password</label>
+            <input type="password" id="POST-pswd" name="password"><br>
+
+
+
+            <label>How interested are you in sharks?</label><br>
+                <input type="radio" name="interest_level" value="a_little">A little
+                <input type="radio" name="interest_level" value="medium">Medium
+                <input type="radio" name="interest_level" value="a_lot">A lot<br>
+
+
+
+            <p>What type of Shark are you interested in(check all that apply):<br>
+                <input type="checkbox" id="POST_large" name="POST_large" value="large">Large Sharks<br>
+                <input type="checkbox" id="POST_small" name="POST_small" value="small">Small Sharks<br>
+                <input type="checkbox" id="POST_UNIQUE" name="POST_UNIQUE" value="unique">Sharks with unique features<br>
+                <input type="checkbox" id="POST_dangerous" name="POST_dangerous" value="dangerous">Dangerous Sharks<br>
+                <input type="checkbox" id="POST_rare" name="POST_rare" value="rare">Rare Sharks<br>
+
+
+                <label for="POST-comments">General comments:</label><br>
+            <textarea name="comments" id="POST-comments"></textarea><br>
+
    
+
+
+ <input type="submit"><input type="reset">
+                </form>
+
+    
