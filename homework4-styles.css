@@ -5,21 +5,11 @@ h2, h3 {
     color: firebrick;
 }
 
-/* ID selector */
-h1#sharks-title {
-    color: darkblue;
-}
-
 /* Body tag */
 body {
     font-family: Arial, sans-serif;
     background-color: #e8f4f8;
     color: #2c3e50;
-}
-
-/* Parent combinator */
-.assignment-section > h2 {
-    color: slateblue;
 }
 
 /* Class selector */
@@ -39,28 +29,16 @@ ul {
     list-style-type: square;
 }
 
-/* Pseudo-class first-child */
-li:first-child {
-    color: darkgreen;
-    font-weight: bold;
-}
-
 /* Link styling */
 a {
     color: #0066cc;
     text-decoration: none;
 }
 
-/* Pseudo-class hover for links */
+/* Link hover */
 a:hover {
     color: #ff6347;
     text-decoration: underline;
-}
-
-/* Class for text styling */
-.serif-text {
-    font-family: Georgia, serif;
-    color: #8b4513;
 }
 
 /* Footer */
