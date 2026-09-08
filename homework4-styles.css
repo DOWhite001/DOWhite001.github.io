@@ -1,261 +1,71 @@
-/* External CSS Stylesheet - homework4-styles.css */
-/* This stylesheet demonstrates cascading, inheritance, font manipulation, and text properties */
+/* Beginner CSS - Sharks Page */
 
-/* Root styles - inherited by all child elements */
-html {
-    scroll-behavior: smooth;
+/* Tag selectors */
+h2, h3 { 
+    color: firebrick;
 }
 
+/* ID selector */
+h1#sharks-title {
+    color: darkblue;
+}
+
+/* Body tag */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #e8f4f8 0%, #f5f5f5 100%);
+    background-color: #e8f4f8;
     color: #2c3e50;
-    margin: 0;
-    padding: 20px;
-    font-size: 16px;
 }
 
-/* Header styling - demonstrates cascading */
-header {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-    color: white;
-    padding: 40px 30px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    margin-bottom: 30px;
+/* Parent combinator */
+.assignment-section > h2 {
+    color: slateblue;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    letter-spacing: 2px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-header p {
-    margin: 15px 0 0 0;
-}
-
-/* Main content area */
-main {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* Assignment section styling - demonstrates inheritance */
-.assignment-section {
-    margin-bottom: 30px;
-}
-
-.assignment-section h2 {
-    color: #1a5490;
-    font-size: 2em;
-    font-weight: 600;
-    text-decoration: underline wavy #ff6347;
-    text-decoration-thickness: 2px;
-    margin-top: 0;
-}
-
-/* Content box - cascading rules for nested elements */
+/* Class selector */
 .content-box {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 8px;
+    background-color: white;
+    padding: 15px;
     border-left: 5px solid #4169e1;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
 }
 
+/* Pseudo-class hover */
 .content-box:hover {
-    transform: translateX(10px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #f0f8ff;
 }
 
-/* Showcase box for typography */
-.showcase-box {
-    background-color: #f9f9f9;
-    padding: 25px;
-    border-radius: 8px;
-    border: 2px solid #ddd;
-    margin: 20px 0;
-}
-
-/* Font family demonstrations */
-.serif-text {
-    font-family: Georgia, serif;
-    font-size: 1.1em;
-    color: #8b4513;
-    word-spacing: 3px;
-}
-
-.sans-serif-text {
-    font-family: Arial, sans-serif;
-    font-size: 1.1em;
-    color: #2c5aa0;
-    letter-spacing: 1px;
-}
-
-.mono-text {
-    font-family: 'Courier New', monospace;
-    font-size: 1.05em;
-    color: #663399;
-    background-color: #f0f0f0;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-
-/* Heading cascade */
-h3 {
-    color: #2c3e50;
-    font-size: 1.4em;
-    text-decoration: underline dotted #ff6347;
-    font-weight: 600;
-}
-
-/* Color demonstration section */
-.color-demo {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-}
-
-.color-text-1 {
-    color: #0066cc;
-    font-weight: bold;
-    font-size: 1.05em;
-    text-indent: 20px;
-}
-
-.color-text-2 {
-    color: #cc0066;
-    font-style: italic;
-    font-size: 1.05em;
-    text-indent: 20px;
-}
-
-.color-text-3 {
-    color: #00aa66;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1.05em;
-    text-indent: 20px;
-}
-
-/* List styling - inheritance example */
+/* List styling */
 ul {
     list-style-type: square;
-    padding-left: 30px;
 }
 
-ul li {
-    margin-bottom: 12px;
-    font-weight: 500;
-    line-height: 1.6;
+/* Pseudo-class first-child */
+li:first-child {
+    color: darkgreen;
+    font-weight: bold;
 }
 
-/* Link styling - color changes and text properties */
+/* Link styling */
 a {
     color: #0066cc;
     text-decoration: none;
-    border-bottom: 2px solid #0066cc;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    padding-bottom: 2px;
 }
 
+/* Pseudo-class hover for links */
 a:hover {
     color: #ff6347;
-    border-bottom-color: #ff6347;
-    text-decoration: overline;
-    letter-spacing: 0.5px;
+    text-decoration: underline;
 }
 
-a:visited {
-    color: #663399;
-    border-bottom-color: #663399;
-}
-
-a:active {
-    color: #ff1493;
-}
-
-/* Article styling - text properties and inheritance */
-article {
-    line-height: 1.8;
-    word-spacing: 2px;
-    text-indent: 20px;
+/* Class for text styling */
+.serif-text {
     font-family: Georgia, serif;
+    color: #8b4513;
 }
 
-article h3 {
-    text-indent: 0;
-    color: #d4af37;
-    text-decoration: underline solid #d4af37;
-}
-
-article p {
-    margin: 10px 0;
-}
-
-/* Footer styling - inheritance and color */
+/* Footer */
 footer {
-    text-align: center;
-    padding: 25px 20px;
-    background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+    background-color: #34495e;
     color: white;
-    margin-top: 40px;
-    border-radius: 8px;
-    font-size: 0.95em;
-}
-
-footer p {
-    margin: 0;
-    font-style: italic;
-    letter-spacing: 0.5px;
-}
-
-/* Responsive design - cascading at different viewports */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8em;
-        letter-spacing: 1px;
-    }
-
-    body {
-        padding: 10px;
-    }
-
-    .content-box {
-        padding: 15px;
-    }
-
-    .color-demo {
-        flex-direction: column;
-    }
-
-    main {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    .serif-text,
-    .sans-serif-text,
-    .mono-text {
-        font-size: 1em;
-    }
+    padding: 20px;
 }
