@@ -38,6 +38,7 @@ body {
     grid-template-rows: repeat(3, 150px);
 }
 
+/* Box1 */
 .teal {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -45,6 +46,7 @@ body {
     grid-row-end: 3;
 }
 
+/* Box2 */
 .blue {
     grid-column-start: 3;
     grid-column-end: 6;
@@ -52,6 +54,8 @@ body {
     grid-row-end: 2;
 }
 
+
+/* Box3 */
 .brown {
     grid-column-start: 3;
     grid-column-end: 5;
@@ -59,6 +63,8 @@ body {
     grid-row-end: 4;
 }
 
+
+/* Box4 */
 .green {
     grid-column-start: 5;
     grid-column-end: 6;
@@ -66,6 +72,8 @@ body {
     grid-row-end: 3;
 }
 
+
+/* Box5 */
 .pink {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -73,6 +81,8 @@ body {
     grid-row-end: 4;
 }
 
+
+/* Box6 */
 .gray {
     grid-column-start: 5;
     grid-column-end: 6;
